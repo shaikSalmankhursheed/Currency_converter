@@ -30,7 +30,7 @@ const App = () => {
 
 
     useEffect(() => {
- axios.get("https://demo4088948.mockable.io/conversion").then(function (response) {
+        axios.get(`https://demo4088948.mockable.io/all_currencies`).then(function (response) {
 
             console.log(response.data);
             SetCurList(response.data);
@@ -55,12 +55,8 @@ const App = () => {
     }
     const CallConverterapi = (data1) => {
 
-        axios.get(` http://data.fixer.io/api/latest?access_key=899192805559fb4fce628932a976a574&symbols=${
-            data1.From
-        },${
-            data1.To
-        }&format=1`).then(function (response) {
-
+        axios.get("https://demo4088948.mockable.io/conversion").then(function (response) {
+            console.log(response)
             updateResult(response.data.rates)
 
 
