@@ -30,7 +30,7 @@ const App = () => {
 
 
     useEffect(() => {
-        axios.get(`https://demo4088948.mockable.io/all_currencies`).then(function (response) {
+ axios.get("https://demo4088948.mockable.io/conversion").then(function (response) {
 
             console.log(response.data);
             SetCurList(response.data);
