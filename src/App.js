@@ -55,7 +55,7 @@ const App = () => {
     }
     const CallConverterapi = (data1) => {
 
-        axios.get(` http://data.fixer.io/api/latest?access_key=899192805559fb4fce628932a976a574&symbols=${
+        axios.get(` https://data.fixer.io/api/latest?access_key=899192805559fb4fce628932a976a574&symbols=${
             data1.From
         },${
             data1.To
